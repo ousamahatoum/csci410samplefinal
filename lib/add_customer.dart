@@ -133,7 +133,7 @@ void saveCustomer(Function(String text) update, int cid, String name, double bal
           'Content-Type': 'application/json; charset=UTF-8',
         }, // convert the cid, name and key to a JSON object
         body: convert.jsonEncode(<String, String>{
-          'cid': '$cid', 'name': name, 'balance':'$balance', 'key': 'cuBubcDE33'
+          'cid': '$cid', 'name': name, 'balance':'$balance', 'key': 'your_key'
         })).timeout(const Duration(seconds: 5));
     if (response.statusCode == 200) {
       // if successful, call the update function
